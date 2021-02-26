@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+   <div id="app" class="container bg-warning p-5">
+        <h1 style="font-family : fantasy; color : blue; font-style : italic;">
+            Este es un ejemplo de texto
+        </h1>
+        <p>se agrega estilo de la forma tradicional</p>
+        
+        <!-- v-bind:style se abrevia :style -->
+        <h2 :style="{fontFamily: tipo, color: color, fontStyle: estilo}">
+            Este es el segundo ejemplo
+        </h2>
+        <p>se agregan estilos mediante v-bind, desde data juntando diferentes datos.</p>
+        
+        <h3 :style="todo">
+            Este es el tercer ejemplo
+        </h3>
+        <p>se agregan todos los estilos juntos mediante un solo dato</p>
+        
+        <h4 :style="objeto">
+            Este es el cuarto ejemplo
+        </h4>
+        <p>se agregan los estilos juntos mediante un dato que se trabaja como un objeto</p>
+        
+        <br>
+        <componente></componente>
+   </div>
+
+<script src="estilos-vbind.js"></script>
+</body>
+</html>
